@@ -5,13 +5,14 @@
   padding: 20px;
   padding-top: 10px;
   height: 30px;
-
   display: flex;
   justify-content: space-between;
   transition: 500ms ease;
+  z-index: 99;
 }
 .nav__black {
   background-color: #111;
+  opacity: 97%;
 }
 .nav__logo {
   width: 115px;
