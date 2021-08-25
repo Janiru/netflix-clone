@@ -20,19 +20,17 @@
   max-height: 180px;
   margin-right: 10px;
   transition: 450ms;
-  padding-bottom: 42px;
+  padding-bottom: 32px;
   padding-top: 5px;
 }
 .row_poster:hover {
   transform: scale(1.08);
 }
 .row_posterLarge {
-  max-height: 350px;
+  max-height: 370px;
   margin-right: 5px;
 }
 .row_posterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
-}
-.posters__arrows {
 }
