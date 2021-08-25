@@ -21,7 +21,7 @@ function Nav () {
         <div className={`nav ${show && "nav__black"}`}>
             <img
                 className="nav__logo"
-                src="https://static.wikia.nocookie.net/jurassicpark/images/5/54/Netflix_logo.png/revision/latest?cb=20200920162840"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1198px-Netflix_2015_logo.svg.png"
                 alt="Netflix Logo"
             />
 
