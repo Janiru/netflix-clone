@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Nav.css";
 
 function Nav () {
+
+    const [show, handleShow] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+         if (window.scrollY > 100) {
+            handleShow(true);
+         } else handleShow(false);        
+    });
+    return () => {
+        window.removeEventListener("scroll");
+      };
+    }, []);
+    
+
     return(
-        <div className="nav">
+        <div className={`nav ${show && "nav__black"}`}>
             <img
                 className="nav__logo"
-                src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+                src="https://static.wikia.nocookie.net/jurassicpark/images/5/54/Netflix_logo.png/revision/latest?cb=20200920162840"
                 alt="Netflix Logo"
             />
 

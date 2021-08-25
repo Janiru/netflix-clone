@@ -3,19 +3,25 @@
   top: 0;
   width: 100%;
   padding: 20px;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  background-color: black;
+  padding-top: 10px;
+  height: 30px;
 
   display: flex;
   justify-content: space-between;
+  transition: 500ms ease;
+}
+.nav__black {
+  background-color: #111;
 }
 .nav__logo {
   width: 115px;
   object-fit: contain;
+  position: fixed;
+  left: 10px;
 }
 .nav__avatar {
+  position: fixed;
   width: 35px;
+  right: 20px;
   object-fit: contain;
-  padding-right: 30px;
 }
