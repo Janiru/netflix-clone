@@ -1,3 +1,8 @@
+# Screenshots
+<img src="./demo-images/image1.jpg" alt="screenshot1"><hr/>
+<img src="./demo-images/image2.jpg" alt="screenshot2"><hr/>
+<img src="./demo-images/image3.jpg" alt="screenshot3"><hr/>
+<img src="./demo-images/image4.jpg" alt="screenshot4"><hr/>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -7,6 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+
+## install the dependencies:
+### `npm install`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
