@@ -2,16 +2,7 @@
   margin-left: 20px;
   color: white;
   font-size: 15px;
-}
-.row_posters {
-  display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  padding: 20px;
-}
-
-.row_posters::-webkit-scrollbar {
-  display: none;
+  position: relative;
 }
 
 .row_poster {
@@ -23,14 +14,22 @@
   padding-bottom: 32px;
   padding-top: 5px;
 }
+
 .row_poster:hover {
   transform: scale(1.08);
 }
+
 .row_posterLarge {
   max-height: 370px;
   margin-right: 5px;
 }
+
 .row_posterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
 }
+
+.slick-arrow.slick-next{
+    right: 25px;
+    z-index: 4;
+} 
