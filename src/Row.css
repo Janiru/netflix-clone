@@ -33,3 +33,9 @@
     right: 25px;
     z-index: 4;
 } 
+
+@media (max-width: 768px){
+  .slick-arrow {
+      display: none!important;
+  }
+}
