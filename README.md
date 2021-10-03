@@ -1,79 +1,72 @@
-# Screenshots
+<h2 align="center">Hey Developers! Presenting you all the 'Netflix Clone'. </h2>
+<h2 align="center">
 <img src="./demo-images/image1.jpg" alt="screenshot1"><hr/>
 <img src="./demo-images/image2.jpg" alt="screenshot2"><hr/>
 <img src="./demo-images/image3.jpg" alt="screenshot3"><hr/>
 <img src="./demo-images/image4.jpg" alt="screenshot4"><hr/>
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-## install the dependencies:
-### `npm install`
 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
+This project is build with following languages and framework
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+ 
+- ![REACT](https://img.shields.io/badge/React-555555?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+- ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 📌Contributing Guidelines :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**1.**  Firstly,create an issue then,
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**2.**  Fork [this](https://github.com/Janiru/netflix-clone) repository.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**3.**  Clone your forked copy of the project.
+```sh
+git clone https://github.com/<your_name>/netflix-clone.git
+```
+**4.** Navigate to the project directory :file_folder: .
+```sh
+cd netflix-clone
+```
+**5.** Add a reference(remote) to the original repository.
+```sh
+git remote add upstream https://github.com/Janiru/netflix-clone.git
+```
+**6.** Check the remotes for this repository.
+```sh
+git remote -v
+```
+**7.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+```sh
+git pull upstream master
+```
+**8.** Create a new branch.
+```sh
+git checkout -b <your_branch_name>
+```
+**9.** Perfom your desired changes to the code base.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**10.** Track your changes:heavy_check_mark: 
+```
+git add . 
+```
+**11.** Commit your changes .
+```
+git commit -m "Relevant message"
+```
+**12.** Push the committed changes in your feature branch to your remote repo.
+```
+git push -u origin <your_branch_name>
+```
+**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**13.** Add appropriate title and description to your pull request explaining your changes and efforts done. Always make sure you have pulled the latest code from the master branch before making a PR.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**14.** Click on `Create Pull Request`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Happy Hacktoberfest!*
