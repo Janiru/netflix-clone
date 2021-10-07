@@ -1,11 +1,10 @@
 import React, { useState,useEffect} from 'react';
 import axios from './axios'
 import "./Row.css"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const base_url = "https://image.tmdb.org/t/p/original/"
+const base_url = "https://image.tmdb.org/t/p/original"
 
 function Row({title, fetchUrl, isLargeRow}) {
     const [movies, setMovies] = useState([]);
@@ -15,34 +14,52 @@ function Row({title, fetchUrl, isLargeRow}) {
             const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
             return request;
-        }
-        fetchData();
+          }      
+    fetchData(); 
     }, [fetchUrl]);
-    
-    var settings = {
-      infinite: false,
-      speed: 700,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      swipeToSlide: true,
-    };
 
-     return(        
-         <div className="row">
-            <h2>{title}</h2>
-             <div className="row_posters">
-                <Slider {...settings}>
-                    {movies.map(movie => {
-                        return(
-                    <img
-                    key={movie.id}
-                    className={`row_poster ${isLargeRow &&  "row_posterLarge"}`}
-                    src={`${base_url}${isLargeRow ? movie.poster_path :movie.backdrop_path}`} alt={movie.name}/>
-                    )})}
-                </Slider>
-            </div>
-        </div>
-    )
+    const responsive = {
+      desktop: {
+        breakpoint: { max: 2024, min: 800 },
+        items: 4.1,
+        slidesToSlide: 4, 
+      },
+      tablet: {
+        breakpoint: { max: 800, min: 464 },
+        items: 3.1,
+        slidesToSlide: 3, 
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 2.1,
+        slidesToSlide: 2,
+      },
+    };
+  
+     return (
+       <div className="row">
+         <h2>{title}</h2>
+         <div className="row_posters">
+           <Carousel
+             swipeable={true}
+             draggable={false}
+             responsive={responsive}
+             minimumTouchDrag={10}
+             removeArrowOnDeviceType='mobile'>
+             {movies.map((movie) => {
+               return (
+                 <img
+                   key={movie.id}
+                   className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                   src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+                   alt={movie.name}
+                 />
+               );
+             })}
+           </Carousel>
+         </div>
+       </div>
+     );
 }
 
 export default Row

@@ -9,11 +9,13 @@
   object-fit: contain;
   width: 100%;
   max-height: 180px;
+  max-width: 95%;
   margin-right: 10px;
   transition: 450ms;
   padding-bottom: 32px;
   padding-top: 5px;
 }
+
 
 .row_poster:hover {
   transform: scale(1.08);
@@ -28,8 +30,3 @@
   transform: scale(1.09);
   opacity: 1;
 }
-
-.slick-arrow.slick-next{
-    right: 25px;
-    z-index: 4;
-} 
