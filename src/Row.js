@@ -4,7 +4,7 @@ import "./Row.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const base_url = "https://image.tmdb.org/t/p/w200"
+const base_url = "https://image.tmdb.org/t/p/original"
 
 function Row({title, fetchUrl, isLargeRow}) {
     const [movies, setMovies] = useState([]);
