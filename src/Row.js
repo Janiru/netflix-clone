@@ -4,7 +4,7 @@ import "./Row.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const base_url = "https://image.tmdb.org/t/p/original"
+const base_url = "https://image.tmdb.org/t/p/w200"
 
 function Row({title, fetchUrl, isLargeRow}) {
     const [movies, setMovies] = useState([]);
@@ -17,7 +17,7 @@ function Row({title, fetchUrl, isLargeRow}) {
           }      
     fetchData(); 
     }, [fetchUrl]);
-
+    console.log(movies)
     const responsive = {
       desktop: {
         breakpoint: { max: 2024, min: 800 },
@@ -48,12 +48,20 @@ function Row({title, fetchUrl, isLargeRow}) {
              removeArrowOnDeviceType='mobile'>
              {movies.map((movie) => {
                return (
-                 <img
-                   key={movie.id}
-                   className={`row_poster ${isLargeRow && "row_posterLarge"}`}
-                   src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
-                   alt={movie.name}
-                 />
+                 <>
+                   <img
+                     key={movie.id}
+                     className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                     src={`${base_url}${
+                       isLargeRow ? movie.poster_path : movie.backdrop_path
+                     }`}
+                     alt={movie.name}
+                   />
+                   <div className="movie_title_wrapper">
+                     <span className="movie_title">{movie.original_title ? movie.original_title :
+                       (movie.original_name ? movie.original_name : "") }</span>
+                   </div>
+                 </>
                );
              })}
            </Carousel>
