@@ -12,7 +12,7 @@
   max-width: 95%;
   margin-right: 10px;
   transition: 450ms;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
   padding-top: 5px;
 }
 
@@ -29,4 +29,9 @@
 .row_posterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
+}
+
+.movie_title_wrapper{
+  text-align: center;
+  margin-bottom: 20px;
 }

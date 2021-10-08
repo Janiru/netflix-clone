@@ -1,12 +1,19 @@
 <h2 align="center">Hey Developers! Presenting you all the 'Netflix Clone'. </h2>
 <h2 align="center">
-<img src="./demo-images/image1.jpg" alt="screenshot1"><hr/>
-<img src="./demo-images/image2.jpg" alt="screenshot2"><hr/>
-<img src="./demo-images/image3.jpg" alt="screenshot3"><hr/>
-<img src="./demo-images/image4.jpg" alt="screenshot4"><hr/>
+<img src="./demo-images/image1.jpg" style="margin-bottom:30px" alt="screenshot1">
+<img src="./demo-images/image02.jpg" style="margin-bottom:30px" alt="screenshot2">
+<img src="./demo-images/image03.jpg" style="margin-bottom:30px" alt="screenshot3">
+<img src="./demo-images/image04.jpg" style="margin-bottom:30px" alt="screenshot4">
 
-<img src="./demo-images/mobileview1.jpg" alt="screenshot5">
-<img src="./demo-images/mobileview1.jpg" alt="screenshot6">
+<h3 align="center">Desktop view 💻</h3>
+<hr/>
+
+<div style="display:flex">
+    <img src="./demo-images/mobileview01.jpg" height=550 style="margin:0px 50px" alt="screenshot5">
+    <img src="./demo-images/mobileview02.jpg" height=550 alt="screenshot6">
+</div>
+
+<h3 align="center">Mobile view 📱</h3>
 <hr/>
 # Getting Started with Create React App
 
